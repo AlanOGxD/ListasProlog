@@ -18,7 +18,7 @@ student(1005,name([ellenovitch, ellen]), grades([72,87,82,70])).
 %?- student(1002,_,grades(L)),last(L,Test).
 
 %Who got 100 on the test?
-%?-student(_, name(Name),grades(L)), last(L,Test), Test= = 100.
+%?-student(_, name(Name),grades(L)), last(L,Test), Test== 100.
 
 %Did anyone get 100 on anything?
 %?- student(_,name(Name),grades(L)), member(100,L).
